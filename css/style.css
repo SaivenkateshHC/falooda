@@ -202,7 +202,7 @@ p {
   position: absolute;
   z-index: 3;
   width: 100%;
-  top: 60%;
+  top: 45%;
   margin-top: -212px;
   text-align: center;
 }
@@ -268,8 +268,8 @@ p {
 }
 
 .fh5co-main-nav {
-  position: relative;
-  background: #fff;
+  position: fixed;
+  background: #bf2f2f;
 }
 .fh5co-main-nav.fh5co-shadow {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
@@ -283,7 +283,7 @@ p {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #e6e6e6;
+  background: rgb(100, 65, 65);
 }
 .fh5co-main-nav:before {
   top: 2px;
@@ -301,7 +301,7 @@ p {
 .fh5co-main-nav .fh5co-menu-1 a,
 .fh5co-main-nav .fh5co-menu-2 a,
 .fh5co-main-nav .fh5co-logo a {
-  padding: 35px 10px;
+  padding: 35px 0px;
   color: #130d08;
   display: -moz-inline-stack;
   display: inline-block;
@@ -325,7 +325,7 @@ p {
 }
 .fh5co-main-nav .fh5co-menu-1 {
   text-align: right;
-  width: 40.33%;
+  width: 75.33%;
 }
 .fh5co-main-nav .fh5co-menu-1 a {
   vertical-align: middle;
@@ -344,7 +344,7 @@ p {
   display: inline-block;
 }
 .fh5co-main-nav .fh5co-menu-2 {
-  text-align: left;
+  text-align: right;
   width: 40.33%;
 }
 
