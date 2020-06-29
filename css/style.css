@@ -536,6 +536,76 @@ p {
   border: 2px solid #fb6e14;
 }
 
+/* -------------------- */
+
+#fh5co-wkoff {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-wkoff {
+    padding: 5em 0;
+  }
+}
+#fh5co-wkoff .flexslider .slides li {
+  font-size: 40px;
+  line-height: 1.5;
+}
+#fh5co-wkoff .flexslider .slides li blockquote {
+  padding-left: 0;
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-wkoff .flexslider .slides li blockquote {
+    padding: 0 20px;
+  }
+}
+#fh5co-wkoff .flexslider .slides li blockquote p {
+  font-size: 40px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-wkoff .flexslider .slides li blockquote p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+#fh5co-wkoff .flexslider .slides li blockquote p.quote-author {
+  font-size: 20px;
+  color: gray;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-wkoff .flexslider .slides li blockquote p.quote-author {
+    font-size: 18px;
+  }
+}
+#fh5co-wkoff .flexslider .flex-control-paging {
+  position: relative;
+}
+#fh5co-wkoff .flexslider .flex-control-paging.flex-control-nav {
+  bottom: -70px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-wkoff .flexslider .flex-control-paging.flex-control-nav {
+    bottom: -60px;
+  }
+}
+#fh5co-wkoff .flexslider .flex-control-paging li a {
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+#fh5co-wkoff .flexslider .flex-control-paging li a:active , #fh5co-wkoff .flexslider .flex-control-paging li a:focus {
+  outline: none;
+}
+#fh5co-wkoff .flexslider .flex-control-paging li a.flex-active  {
+  top: 2px;
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+  border: 2px solid #fb6e14;
+}
+
 #fh5co-featured {
   padding: 7em 0;
   background: #000000 url(../images/wood_1.jpg) repeat;

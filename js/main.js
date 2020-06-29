@@ -52,6 +52,17 @@
 	  	});
 	}
 
+	var sliderWkoff = function() {
+		$('#fh5co-wkoff .flexslider').flexslider({
+			animation: "slide",
+			slideshowSpeed: 5000,
+			directionNav: false,
+			controlNav: true,
+			smoothHeight: true,
+			reverse: true
+	  	});
+	}
+
 	var offcanvasMenu = function() {
 		$('body').prepend('<div id="fh5co-offcanvas" />');
 		$('body').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>');
@@ -337,6 +348,35 @@
 		}
 	};
 
+	var wkoffAnimate = function() {
+		var wkoff = $('#fh5co-wkoff');
+		if ( wkoff.length > 0 ) {	
+
+			wkoff.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						wkoff.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	var featureAnimate = function() {
 		var feature = $('#fh5co-featured');
 		if ( feature.length > 0 ) {	
@@ -570,6 +610,7 @@
 		fullHeight();
 		sliderMain();
 		sliderSayings();
+		sliderWkoff();
 		offcanvasMenu();
 		mainMenuSticky();
 		parallax();
@@ -584,6 +625,7 @@
 		homeAnimate();
 		aboutAnimate();
 		sayingsAnimate();
+		wkoffAnimate();
 		featureAnimate();
 		typeAnimate();
 		foodMenusAnimate();

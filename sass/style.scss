@@ -530,6 +530,72 @@ p {
 	}
 }
 
+
+#fh5co-wkoff {
+	padding: 7em 0;
+	@media screen and (max-width :$screen-sm) {
+		padding: 5em 0;
+	}
+	.flexslider {
+		.slides {
+			li {
+				font-size: 40px;
+				line-height: 1.5;
+				blockquote {
+					padding-left: 0;
+					border-left: none;
+					@media screen and (max-width: $screen-sm) {
+						padding: 0 20px;	
+					}
+					p {
+						font-size: 40px;
+						line-height: 1.5;
+						@media screen and (max-width: $screen-sm) {
+							font-size: 20px;
+							line-height: 1.5;
+						}
+						&.quote-author {
+							font-size: 20px;
+							color: lighten($brand-black, 50%);
+							@media screen and (max-width: $screen-sm) {
+								font-size: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.flex-control-paging {
+			position: relative;
+			&.flex-control-nav {
+				bottom: -70px;
+				@media screen and (max-width: $screen-sm) {
+					bottom: -60px;
+				}
+			}
+			li {
+				a {
+			
+					width: 14px;
+					height: 14px;
+					background: rgba(0,0,0,.2);
+					box-shadow: none;
+					&:active, &:focus {
+						outline: none;
+					}
+					&.flex-active {
+						top: 2px;
+						position: relative;
+						background: transparent;
+						box-shadow: none;
+						border: 2px solid $brand-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
 #fh5co-sayings {
 	padding: 7em 0;
 	@media screen and (max-width :$screen-sm) {
