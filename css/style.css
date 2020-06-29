@@ -189,11 +189,12 @@ p {
  * Flexslider
  */
 #fh5co-home {
-  min-height: 700px;
+  min-height: 500px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-home .flexslider {
   border: none;
+  height: 600px;
   position: relative;
   z-index: 1;
   margin-bottom: 0;
@@ -471,7 +472,7 @@ p {
 #fh5co-sayings {
   padding: 7em 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
   #fh5co-sayings {
     padding: 5em 0;
   }
@@ -484,7 +485,7 @@ p {
   padding-left: 0;
   border-left: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
   #fh5co-sayings .flexslider .slides li blockquote {
     padding: 0 20px;
   }
@@ -493,7 +494,7 @@ p {
   font-size: 40px;
   line-height: 1.5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
   #fh5co-sayings .flexslider .slides li blockquote p {
     font-size: 20px;
     line-height: 1.5;
@@ -503,7 +504,7 @@ p {
   font-size: 20px;
   color: gray;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 76px) {
   #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
     font-size: 18px;
   }
@@ -539,7 +540,10 @@ p {
 /* -------------------- */
 
 #fh5co-wkoff {
-  padding: 7em 0;
+  padding-top: 7em;
+  padding-bottom: 1em;
+  margin-bottom: 1px;
+
 }
 @media screen and (max-width: 768px) {
   #fh5co-wkoff {
@@ -1208,6 +1212,7 @@ p {
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {
     display: block;
+    position: sticky;
   }
 }
 .offcanvas-visible #fh5co-offcanvas {
@@ -1432,6 +1437,7 @@ p {
 .js .to-animate, .js
 .to-animate-2 {
   opacity: 0;
+  margin-bottom: 1%;
 }
 
 .row-padded {
